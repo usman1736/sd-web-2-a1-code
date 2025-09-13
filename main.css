@@ -7,77 +7,78 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 20;
-  color: lightgrey;
-  background-color: #f5f5f5;
+  line-height: 1.6;
+  color: #0f172a;
+  background-color: #f5f7fb;
   padding: 20px;
 }
 
 /* Header styles */
 header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: #ffffff;
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-bottom: 2rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.25);
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   margin-bottom: 0.5rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 header p {
-  font-size: 1.1rem;
-  opacity: 0.9;
+  font-size: 1.05rem;
+  opacity: 0.95;
 }
 
 /* Main content */
 main {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 /* Section styles */
 section {
-  background: black;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #667eea;
+  background: #ffffff;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+  border-left: 5px solid #4f46e5;
 }
 
 section h2 {
-  color: #667eea;
-  font-size: 1.5rem;
+  color: #111827;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 section p {
-  color: #666;
-  margin-bottom: 1rem;
+  color: #374151;
+  margin-bottom: 0.75rem;
   font-size: 1rem;
 }
 
 /* Output areas */
 .output {
-  background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 6px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
 }
 
 .output h3 {
-  color: #495057;
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
-  font-weight: 500;
+  color: #0f172a;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 /* List styles */
@@ -87,17 +88,19 @@ ul {
 }
 
 ul li {
-  background: white;
+  background: #ffffff;
   margin-bottom: 0.5rem;
-  padding: 0.75rem;
-  border-radius: 4px;
-  border-left: 3px solid #28a745;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  padding: 0.75rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #16a34a;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 ul li:hover {
-  transform: translateX(5px);
+  transform: translateX(4px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
 }
 
 ul li:last-child {
@@ -107,23 +110,23 @@ ul li:last-child {
 /* Error message styles */
 #error-messages,
 #broken-array-errors {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
 }
 
 .error-message {
-  background-color: #f8d7da;
-  color: #721c24;
+  background-color: #fef2f2;
+  color: #991b1b;
   padding: 0.75rem;
-  border: 1px solid #f5c6cb;
-  border-radius: 4px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
   margin-bottom: 0.5rem;
   font-family: "Courier New", monospace;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
 }
 
 /* Empty state styles */
 .empty-list {
-  color: #6c757d;
+  color: #6b7280;
   font-style: italic;
   text-align: center;
   padding: 1rem;
@@ -132,15 +135,15 @@ ul li:last-child {
 /* Responsive design */
 @media (max-width: 768px) {
   body {
-    padding: 10px;
+    padding: 12px;
   }
 
   header {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 
   header h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   section {
@@ -150,20 +153,21 @@ ul li:last-child {
 
 /* Code-like styling for technical content */
 code {
-  background-color: #e9ecef;
+  background-color: #eef2ff;
   padding: 0.25rem 0.5rem;
-  border-radius: 3px;
+  border-radius: 6px;
   font-family: "Courier New", monospace;
-  font-size: 0.9rem;
-  color: #e83e8c;
+  font-size: 0.92rem;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
 }
 
 /* Success indicator */
 .success {
-  color: #155724;
-  background-color: #d4edda;
-  border: 1px solid #c3e6cb;
+  color: #065f46;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
   padding: 0.75rem;
-  border-radius: 4px;
+  border-radius: 8px;
   margin-top: 0.5rem;
 }
